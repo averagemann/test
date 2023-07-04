@@ -1,0 +1,60 @@
+/* CSS code for Copy Address Example */
+
+body {
+    font-family: Arial, sans-serif; /* Set the font family for the entire body */
+    margin: 20px; /* Add margin around the body */
+}
+
+h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+fieldset {
+    border: 1px solid #ccc; /* Add a border with a color to the fieldset */
+    padding: 10px; /* Add padding inside the fieldset */
+    margin-bottom: 20px; /* Add margin at the bottom of the fieldset */
+}
+
+legend {
+    font-weight: bold; /* Make the legend text bold */
+}
+
+label {
+    display: block; /* Display labels as block elements */
+    margin-top: 10px; /* Add margin at the top of each label */
+}
+
+label::after {
+    content: "\A"; /* Add a line break after each label */
+    white-space: pre; /* Preserve white spaces */
+}
+
+input[type="text"] {
+    width: 100%; /* Set the width of the text input to 100% */
+    padding: 5px; /* Add padding inside the text input */
+    border: 1px solid #ccc; /* Add a border with a color to the text input */
+    border-radius: 3px; /* Add rounded corners to the text input */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+input[type="text"]:invalid {
+    border-color: red; /* Change the border color of invalid inputs to red */
+}
+
+input[type="text"]:valid {
+    border-color: green; /* Change the border color of valid inputs to green */
+}
+
+input[type="text"]:invalid + .validation-message {
+    display: block; /* Display the validation message for invalid inputs */
+    color: red; /* Set the text color of the validation message to red */
+}
+
+input[type="text"]:valid + .validation-message {
+    display: none; /* Hide the validation message for valid inputs */
+}
+
+.validation-message {
+    display: none; /* Hide the validation messages by default */
+    margin-top: 5px; /* Add margin at the top of each validation message */
+}
