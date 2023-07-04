@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Copy Address midterm</title>
+  <script src="midterm.js"></script> <!-- Include the JavaScript file -->
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- Include the CSS file -->
+</head>
+<body>
+  <h2>Copy Address midterm</h2>
+  <ol>
+    <a href="/week1/js01/chapter/js01_txt.html">Second Cousin Page</a>
+</ol>
+  <fieldset>
+    <legend>Shipping Address:</legend>
+    <label for="shipping-first-name">First Name:</label>
+    <input type="text" id="shipping-first-name" placeholder="First Name" required>
+    <span class="validation-message">Please enter your first name.</span> <!-- Validation message for first name -->
+
+    <label for="shipping-last-name">Last Name:</label>
+    <input type="text" id="shipping-last-name" placeholder="Last Name" required>
+    <span class="validation-message">Please enter your last name.</span> <!-- Validation message for last name -->
+
+    <label for="shipping-street">Street Address:</label>
+    <input type="text" id="shipping-street" placeholder="Street" required>
+    <span class="validation-message">Please enter your street address.</span> <!-- Validation message for street address -->
+
+    <label for="shipping-city">City:</label>
+    <input type="text" id="shipping-city" placeholder="City" required>
+    <span class="validation-message">Please enter your city.</span> <!-- Validation message for city -->
+    
+    <label for="shipping-state">State:</label>
+    <input type="text" id="shipping-state" placeholder="State" required>
+    <span class="validation-message">Please enter your state.</span> <!-- Validation message for state -->
+   
+    <label for="shipping-zip">ZIP Code:</label>
+    <input type="text" id="shipping-zip" placeholder="ZIP" required pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+    <span class="validation-message">Please enter a valid ZIP code (e.g., A1A 1A1).</span> <!-- Validation message for ZIP code -->
+    
+    <label for="shipping-phone">Phone:</label>
+    <input type="text" id="shipping-phone" placeholder="Phone" required pattern="[0-9]{10}">
+    <span class="validation-message">Please enter a valid phone number (10 digits).</span> <!-- Validation message for phone number -->
+  </fieldset>
+  
+  <fieldset>
+    <legend>Billing Address:</legend>
+
+    <label for="billing-first-name">First Name:</label>
+    <input type="text" id="billing-first-name" placeholder="First Name" required>
+    <span class="validation-message">Please enter your first name.</span> <!-- Validation message for first name -->
+
+    <label for="billing-last-name">Last Name:</label>
+    <input type="text" id="billing-last-name" placeholder="Last Name" required>
+    <span class="validation-message">Please enter your last name.</span> <!-- Validation message for last name -->
+
+    <label for="billing-street">Street Address:</label>
+    <input type="text" id="billing-street" placeholder="Street" required>
+    <span class="validation-message">Please enter your street address.</span> <!-- Validation message for street address -->
+
+    <label for="billing-city">City:</label>
+    <input type="text" id="billing-city" placeholder="City" required>
+    <span class="validation-message">Please enter your city.</span> <!-- Validation message for city -->
+
+    <label for="billing-state">State:</label>
+    <input type="text" id="billing-state" placeholder="State" required>
+    <span class="validation-message">Please enter your state.</span> <!-- Validation message for state -->
+
+    <label for="billing-zip">ZIP Code:</label>
+    <input type="text" id="billing-zip" placeholder="ZIP" required pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d">
+    <span class="validation-message">Please enter a valid ZIP code (e.g., A1A 1A1).</span> <!-- Validation message for ZIP code -->
+    
+    <label for="billing-phone">Phone:</label>
+    <input type="text" id="billing-phone" placeholder="Phone" required pattern="[0-9]{10}">
+    <span class="validation-message">Please enter a valid phone number (10 digits).</span> <!-- Validation message for phone number -->
+  </fieldset>
+  
+  <label>
+    <input type="checkbox" id="copy-checkbox" onchange="copyAddress()"> Copy Shipping Address to Billing Address <!-- Checkbox to trigger the copyAddress function -->
+  </label>
+</body>
+</html>
