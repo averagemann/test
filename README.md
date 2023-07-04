@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <body>
-     
-   # test
+     test
  <a href="folder1/midterm.html">Second Cousin Page</a>
  </body>
  </html>
